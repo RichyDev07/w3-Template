@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w3 .css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+
+    <title>w3-template</title>
+</head>
+<body>
+    <div class="w3-bar w3-black w3-large  " style=" position: fixed; top: 0;width: 100%; overflow: hidden;">
+        <a href="#" class="w3-bar-item  w3-display-topright w3-hover-red"><i class="fa fa-search"></i></a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile w3-black">HOME</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">BAND</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">TOUR</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile">CONTACT</a>
+     </div>
+      </div>
+      <div class="w3-card 2  w3-mobile">
+        <img class="mySlides" src="images/img_chicago.jpg" style="width:100%; height: 100vh;" >
+        <img class="mySlides" src="images/img_la.jpg" style="width:100%; height: 100vh">
+        <img class="mySlides" src="images/img_ny.jpg" style="width:100%;height: 100vh;">
+      </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 3000);
+      }
+      </script>
+      <div class="w3-container w3-center w3-mobile" >
+            <h1>THE BAND</h1>
+            <i>We love music</i>
+            <p>We have created a fictional band website. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+            </p>
+            <div class=" w3-container w3-row w3-mobile ">
+
+                <div class=" w3-container w3-col s4 w3-mobile  ">
+                    <h5>Name</h5>
+                    <img src="images/bandmember.jpg" alt="" style="width: 50%;padding: 20px;">
+        
+                </div>
+                <div class=" w3-container w3-col s4 w3-mobile">
+                    <h5>Name</h5>
+                    <img  class=" " src="images/bandmember.jpg" alt="" style="width: 50%;padding: 20px;">
+        
+                </div>
+                <div class=" w3-container w3-col s4 w3-mobile w3-center ">
+                    <h5>Name</h5>
+                    <img class="w3-hover-gray" src="images/bandmember.jpg" alt="" style="width: 50%;padding: 20px;">
+        
+                </div>
+        
+            </div>
+        
+    </div>  
+        <div class="w3-black w3-container">
+            <h1 class="w3-center">TOUR DATES</h1>
+                <p class="w3-center w3-text-gray" > <i>Remember to book your tickets!</i></p>
+            <div class="w3-container w3-white w3-span" style="max-width: 900px; margin: auto;">
+                <ul class="w3-ul">
+                  <li> september <button class="w3-btn w3-red"> sold out</button></li>
+                  <li> October <button class="w3-btn w3-red"> sold out</button> </li>
+                  <li>November</li>
+                </ul>
+                <span class="w3-badge w3-right">3</span>
+            </div>
+            
+            <div class=" w3-container row w3-mobile w3-white section">
+
+                <div class=" w3-container w3-col s4 w3-mobile w3-padding ">
+                    
+                    <img src="images/newyork.jpg" alt=""style="width: 100%;" > 
+                    <p>New York</p>
+                    <p>Fri 27 Nov 2016</p>
+                    <p  style="font-weight: bold;">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                     <button class="w3-btn w3-black w3-hover-gray">Buy Ticket</button>
+                    
+        
+                </div>
+                <div class=" w3-container w3-col s4 w3-mobile w3-padding">
+                    
+                    <img  class=" " src="images/paris.jpg" alt="" style="width: 100%;">
+                    <p>paris</p>
+                    <p>Sat 28 Nov 2016</p>
+                    <p  style="font-weight: bold;">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                     <button class="w3-btn w3-black w3-hover-gray">Buy Ticket</button>
+                  </div>
+                 <div class=" w3-container w3-col s4 w3-mobile w3-center mw3-padding" >
+                    
+                    <img  src="images/sanfran.jpg" alt="" style="width: 100%;">
+                    <p>San Francisco</p>
+                    <p>Sun 29 Nov 2016</p>
+                    <p  style="font-weight: bold;">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <button class="w3-btn w3-black w3-hover-gray">Buy Ticket</button>
+                  </div>
+        
+            </div>
+           
+        </div>
+        <div class=" w3-container w3-dark-gray w3-center w3-mobile" style="height: 50vh; margin-top: 20px;">
+          <h4>CONTACT</h4>
+          <i>Fan? Drop a note!</i>
+           <div class="we-container w3-padding w3-mobile">
+            <i class='fa fa-map-marker w3-xlarge w3-padding'> Ghana</i>
+            <p><i class='fa fa-phone  w3-xlarge w3-padding '>+23359115007</i> </p>
+            <p><i class="fa fa-envelope w3-xlarge w3-padding"></i> <a  href="https://mail.google.com/mail/?tab=rm" style="text-decoration: none;"> Email:richmondgyening@gmail.com</a></p>
+           </div>
+
+        
+
+        </div>
+
+        <div class="w3-container background w3-mobile w3-opacity">
+          <p>.</p>
+
+        </div>
+        <div class=" w3-light-gray w3-center w3-mobile" style="height: 50vh;">
+          <article style="padding-top: 150px;">
+            <a href="https://web.facebook.com/"> <i class="fa fa-facebook-official w3-xlarge w3-opacity " ></i></a>
+            <a href="https://www.instagram.com/"> <i class="fa fa-instagram w3-xlarge w3-opacity " > </i></a>
+            <a href="https://twitter.com/home?lang=en"> <i class="fa fa-twitter w3-xlarge w3-opacity " > </i></a>
+            <a href="https://www.linkedin.com/feed/"> <i class="fa fa-linkedin w3-xlarge w3-opacity " > </i></a>
+            <a href="https://github.com/RichyDev07"> <i class="fa fa-github w3-xlarge w3-opacity " > </i></a>
+
+          </article>
+         <i>powered by</i> <a href="https://www.w3schools.com/w3css/default.asp"> <i> w3.css</i></a>
+       
+        </div>
+   
+     
+
+        
+       
+</body>
+</html>
